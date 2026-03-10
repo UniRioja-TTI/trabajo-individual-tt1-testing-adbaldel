@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class ContactoSimTest
 {
     private ContactoSim contactoSim;
@@ -72,6 +74,7 @@ class ContactoSimTest
 
         entities = contactoSim.getEntities();
 
+        assertEquals(2, entities.size());
         // assert...(): Comprobar que se devuelven la cantidad de entidades esperadas
         // También se puede comprobar que sean iguales a las que se esperan
     }
